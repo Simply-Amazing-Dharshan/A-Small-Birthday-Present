@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Birthday Cake</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="birthday-title">Happy birthday Suziee!</h1>
+
+    <main class="birthday-scene">
+        <div
+            class="cake"
+            id="cake"
+            role="button"
+            tabindex="0"
+            aria-label="Lighted birthday cake. Touch or click to blow out the candles."
+        ></div>
+    </main>
+
+    <script>
+        const cake = document.getElementById("cake");
+        const scene = document.querySelector(".birthday-scene");
+        let candlesBlown = false;
+
+        function blowOutCandles() {
+            if (candlesBlown) return;
+
+            candlesBlown = true;
+            cake.className = "blown-cake";
+            cake.setAttribute("aria-label", "Birthday cake with blown-out candles.");
+        }
+
+        scene.addEventListener("click", blowOutCandles);
+        cake.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                blowOutCandles();
+            }
+        });
+    </script>
+    
+    <h1 class="birthday-title">Make your wish and touch the cake!</h1>
+</body>
+</html>
