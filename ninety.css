@@ -20,30 +20,15 @@ body {
 
 }
 
-.love-letter {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 35px 18px 45px;
-    border-top: 1px solid rgba(80, 40, 40, 0.12);
-    color: #4A304A;
-}
-
-.love-letter p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 22px;
-}
-
-.love-letter p:last-child {
-    margin-bottom: 0;
-}
 
 .header {
     text-align: center;
     padding: 35px 10px 40px;
-
+    background-color: #E8D5E5;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .small-title {
@@ -55,14 +40,14 @@ body {
 }
 
 .header h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: love light, Georgia, 'Times New Roman', Times, serif;
     font-size: 42px;
     line-height: 1.05;
     margin-bottom: 15px;
 }
 
 .subtitle {
-    font-size: 17px;
+    font-size: 14px;
     opacity: 0.75;
     
 }
@@ -101,7 +86,7 @@ body {
 }
 
 .category-card button {
-    background-color: #3d2929;
+    background-color: #4A304A;
     color: #fff;
     border: none;
     padding: 11px 22px;
@@ -201,8 +186,22 @@ body {
    font-size: 20px;
 }
 
-.dots {
-    font-size: 11px;
-    letter-spacing: 4px;
-    opacity: 0.5;
+.love-letter {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 18px 45px;
+    border-top: 1px solid rgba(80, 40, 40, 0.12);
+    color: #4A304A;
+}
+
+.love-letter p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.love-letter p:last-child {
+    margin-bottom: 0;
 }
